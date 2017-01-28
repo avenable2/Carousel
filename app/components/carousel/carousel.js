@@ -1,10 +1,14 @@
 function CarouselCtrl() {
   var ctrl = this;
-  ctrl.message = 'This is a message';
+  ctrl.images = [
+      '../../../resources/images/img1.jpg',
+      '../../../resources/images/img2.jpg',
+      '../../../resources/images/img3.jpg'
+  ]
 }
 
 angular.module("myApp.carousel", [])
     .component('carousel',{
-      templateUrl: 'carousel.html',
-      controller: CarouselCtrl,
+      templateUrl: 'components/carousel/carousel.html',
+      controller: CarouselCtrl
     });
